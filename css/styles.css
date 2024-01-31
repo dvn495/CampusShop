@@ -1,0 +1,19 @@
+/*
+verde o: #7DF0BB
+azul m: #7DD8F0
+azul c: #7DF0E3
+verde c: #7DF094
+azul o: #7DB4F0
+*/
+.buscador{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium';
+    justify-content: space-between;
+    text-align: right;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
