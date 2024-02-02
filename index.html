@@ -9,22 +9,72 @@
 </head>
 <body>
     <nav class="nav">
-
-        <div class="nav__container">
-
-            <h1 class="nav__title">Tienda Unica</h1>
-            
-            <a href="#menu" class="nav__menu">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVxJREFUSEu1ldENwjAMRN1NYBJgEmASYBJgEmAS2AT6UK9yg+OWj1rqRxPHZ5/PSWMzWzNzfJsCcOyS2JrZwsxe3f/dzB7t2iVLMgNYm9m5C5rFAPDaOiiRgW8NAOfDn/SdIpAIIAtOEKwG/gNSAkDLrZI5XO+7vSwJfPq+lADPhHMPQG92lUToyVJ7HoADHPSGM8rB1ExPEWt8VO5t066hsoFMo6xwVICVA0OerFNVRCvBOTsAiOihaTh/swmM6mh4SVdPk6fonciSAzRPQGMz8jcA2F4dUb/K/L7J+woyBeGLMnRNQA3+NQsrQP+lGhRAB7yiMv9e0r6CbMhEj2TM/6Rh8wBkR4CoCtEjWviv0VQdNOioDRsB/Z4GKaKpH7KyyeI7Kr2cWDimgrLa0csOEA6S7WzXtSoRiJSTSdIP4cBv7MkUDdxD0OGfTF4xLHzJhDIGkMzStK3ZAT5AUFUZndnuLQAAAABJRU5ErkJggg==" class="nav__icon">
-            </a>
-
-            <a href="#" class="nav__menu nav__menu--second">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZpJREFUSEu1lYFRwzAMRdVN6AosAIzQCYBJgEkKEzACsAArAJNAX08/9+04dnpcfZdz4kj6+l+yvYkzj82Z48cagMdM4jYiLiLiO7/fI+LjsPbcS7IHcB0R+wzaiwHgy8FAiRS2SwAYP6SlApAxDyz0YMM746kF0gLw4E0nS5Hgd5bMzL4GQJa3DHCTGSveZUS85scuIj4NyP3uvS41wFdSpnAY+hgx038k3crRAaBKUQsDQ+gxwAy5YM88sXcAggPiOmLMutpRLYoktC0zwbQuFjQD68U+kDyu4ahVCYS9A8NiUsEZ/KYc6CcHKQQQLcnMoEYwre1gTKInAxB0VGQlo0SPyTsDSVS3pxxVIzGou4z1WaM4ANohQWtzOXV1TEtKsZza3AG0WVptKkfpDptiQyXNWaM4gFoSoHqjiZ3sVchjK+aQhIsbzTXk3TPEWWvMfP9k4flePGL+e9gNu6sFUJ+QUJb2flxrN598XEtTHcMKYHIXrySAnIDPxujKJDiZXuXsVya3mCRaAl91Jy86r/kxYrAmRtfmD2AbchkjaGq1AAAAAElFTkSuQmCC" class="nav__icon">
-            </a>
+        <div class="container">
+            <h1>Tienda Unica</h1>
+            <div class="navegacion">
+                <a class="buscador" href="/index.html">Inicio</a>
+                <a class="buscador" href="/categorias.html">Catalogo</a>
+                <a class="buscador" href="#">Quienes somos</a>
+                <a class="buscador" href="#">Contactenos</a>
+            </div>
         </div>
+        <div class="nav__container">
+            <h1 class="nav__title">Tienda Unica</h1>
+            <a href="#menu" class="nav__menu">
+                <img src="images/bx-universal-access.svg" class="nav__icon">
+            </a>
+            <a href="#" class="nav__menu nav__menu--second">
+                <img src="images/bxs-universal-access.svg" class="nav__icon">
+            </a>
+            <ul class="dropdown" id="menu">
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <img src="images/bx-home-alt-2.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Inicio</span>
+                    </a>
+                </li>
 
+                <li class="dropdown__list">
+                    <a href="/categorias.html" class="dropdown__link">
+                        <img src="images/bx-log-in-circle.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Catalogo</span>
+                    </a>
+                </li>
+
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <img src="images/bx-search-alt-2.svg"dropdown__icon">
+                        <span class="dropdown__span">¿Quienes somos?</span>
+                    </a>
+                </li>
+
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <img src="images/bxs-comment.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Contactanos</span>
+                        <img src="./Pictures/body_main/down.svg" class="dropdown__arrow">
+
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+
+                        <ul class="dropdown__sub">
+
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Contact 1</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Contact 2</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </nav>
     <main>
+        
 
     </main>
 
