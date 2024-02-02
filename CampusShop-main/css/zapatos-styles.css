@@ -1,17 +1,13 @@
 .container{
     position: relative;
     display: grid;
-    grid-template-columns: 950px 300px;
+    grid-template-columns: 150px auto 300px;
     border: 2px solid black;
     width: 80%; 
     margin: 0 auto; 
     padding: 10px;
 }
-.containerimages{
-    display: grid;
-    grid-template-columns: 145px auto;
 
-}
 .containerheader{
     width: 100%;
     display: flex;
@@ -52,15 +48,14 @@
     transition: all 0.3s ease-in-out ;
 }
 .productog1{
-
+    z-index: 1;
     position: fixed;
-    visibility: visible;
     width: 600px;
     height: auto;
     margin: 3%;
 }
 .productog2, .productog3{
-
+    z-index: 2;
     visibility: hidden;
     position: fixed;
     margin: 3%;
@@ -69,14 +64,14 @@
     top: 135px
 }
 .productog4{
-
+    z-index: 2;
     visibility: hidden;
     position: fixed;
     margin: 3%;
     width: 540px;
     height: auto;
-    top: 120px;
-    right: 51.9rem;
+    right: 581px;
+    top: 135px
 }
 .productop2:hover~.productog2{
     visibility: visible;
