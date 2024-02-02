@@ -1,7 +1,91 @@
 .container{
+    position: relative;
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 150px auto 300px;
     border: 2px solid black;
+    width: 80%; 
+    margin: 0 auto; 
+    padding: 10px;
+}
+
+.containerheader{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navegacion{
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;  
+}
+.productop1{
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgba(128, 128, 128, 0.527);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out ;
+}
+.productop2{
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgba(128, 128, 128, 0.527);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out ;
+}
+.productop3{
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgba(128, 128, 128, 0.527);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out ;
+}
+.productop4{
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgba(128, 128, 128, 0.527);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out ;
+}
+.productog1{
+    z-index: 1;
+    position: fixed;
+    width: 600px;
+    height: auto;
+    margin: 3%;
+}
+.productog2, .productog3{
+    z-index: 2;
+    visibility: hidden;
+    position: fixed;
+    margin: 3%;
+    width: 600px;
+    height: auto;
+    top: 135px
+}
+.productog4{
+    z-index: 2;
+    visibility: hidden;
+    position: fixed;
+    margin: 3%;
+    width: 540px;
+    height: auto;
+    right: 581px;
+    top: 135px
+}
+.productop2:hover~.productog2{
+    visibility: visible;
+}
+.productop3:hover~.productog3{
+    visibility: visible;
+}
+.productop4:hover~.productog4{
+    visibility: visible;
+}
+.productop1:hover ,.productop2:hover ,.productop3:hover, .productop4:hover{
+    border: 2px solid #7DF0E3;
+    border-radius: 5px;
+    transform: scale(1.1);
 }
 .items{
     display: grid;
