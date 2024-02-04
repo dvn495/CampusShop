@@ -10,12 +10,16 @@
 <body>
     <nav class="nav">
         <div class="container">
-            <h1>Tienda Unica</h1>
+            <div class="titleimg">
+                <h1 class="title">Tienda Unica</h1>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAA1JJREFUeF7tnItR3DAQhqVOQiUJlSRUklBJoBKgkpBKFn5GYoyxvU8bGVYznru5O+3Jn/5dvV1Lpk0CNflsE0hAjEISUALyBZFU0KgKIqJfpZTvrXzfSin9wkePk+t/e39fa8Xnh6bDFEREP0opuH42GJYbvS+lPDznvzkK1u6AmlJ+O6CsgQSs61orXndLuwFqigEYqGbPtCuocEBEhFjy9wAwc+gAdRXteqGAmmru9pQLYxtB/DISUhigAeBM2UFJNxEVFQKIiOBSaLZHStcRrZ0bEBH9KaUgGI+Y0MqhfObkAtSacKhn5OSCZAY0WMzhKujCGrhNgFpT/o8r1UDfm1s3KyA05Xt3AKP5YnhypTWqBnRC9UyZqF3NAuiM6umQMCNwqVGRCtDJAvMaB1UnUgsIgRljrTMnlYrEgE4ee+YVKo5FGkDWHjPGRJjk6vM2UCAmzbRDkyg7gCXuPGoAad0LfQ/4++KEVotn6IVzLhtlZ6oisZuJABndC9MOm7N9wqAfZcfkZlJAWvcSS5iZCYiys9SoiFqzvQCxtd5LzAx4o+wsARL1rKWAVPM99XmOQdoP2HLfKDsrZQkFpO09i5tRJr5F2VliJArUopomIm0LJvJvlJoJ1FF2lgA91lovOKVLARFnaPa9JrhuNQBRdhaLL3HhvQChQKx7CJv5KDvvIH00IEkHT7JEFGVnOEC9QBgi3GIDAqY9J5sWLEONCDuvoD5aQcqwdfzPExDDPAElIJ9bpoJSQakgH4FUkI9fxqBUUCrIRyAV5OOXMSgVlAryEUgF+fhlDEoFpYJ8BFJBPn4Zg7b5hS4cqtbmffV6WG7RoqR04RBLNKMfOdCSjQOEfzasz2sLfPTv2RVbFEikoAboM7mZSD0qQJ9IRaLg3OUsVlADhA2XWE/nNl6uuQv2LE7Px1vcCjY850TEu9bUCmqQELAtx7xf9vo4j4m/3JzxEN/mJoi1mlIpaGqkbb5ETXJqelewtqusHxnn8uNvsQECceP1yQuKbcTIL445c1BmQE1N/WkKeMREv1G8wg1wMw9bh2snT2OY50fe/pSFzUdSNBvYmN7d7s3/w471MJ3JxSxB48x5XAo6841Ly56AuBG/lORX/V0qKBXk0/4TDiPGWF4HwAEAAAAASUVORK5CYII="/>
+            </div> 
             <div class="navegacion">
                 <a class="buscador" href="/index.html">Inicio</a>
                 <a class="buscador" href="/categorias.html">Catalogo</a>
-                <a class="buscador" href="#">Quienes somos</a>
-                <a class="buscador" href="#">Contactenos</a>
+                <a class="buscador" href="/index.html#quienes">Quienes somos</a>
+                <a class="buscador" href="/index.html#Contactanos">Contactenos</a>
+                <a class="buscador" href="/carrito.html">Carrito</a>
             </div>
         </div>
         <div class="nav__container">
@@ -75,8 +79,97 @@
     </nav>
     <main>
         
+        <div class="containerbanner">
+            <div class="infoprincipal">
+                <img class="iconprincipal"src="data:image/png;base64,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"/>
+                <div class="textinfo">
+                    <h1>Tienda Unica</h1>
+                    <p >¡Bienvenido a Tienda Única, donde la moda, la tecnología y la diversión se encuentran en un solo lugar! Explora nuestra amplia selección de ropa, electrodomésticos, zapatos, videojuegos y motos. Con opciones de compra seguras y entrega rápida, encontrarás todo lo que necesitas para satisfacer tus gustos y necesidades. ¡Únete a nosotros y descubre una experiencia de compra única!</p>
+                </div>
+            </div>
+        </div>
+        <h1 class="txtcat">PRODUCTOS</h1>
+        <div>
+            <div class="catalogoinicio">
+                <div class="containerimgcat">
+                        <a href="/zapatonike.html" class="txtcatg">
+                            <img class="imgcat" class="imgcatalogoinicio" src="images/ZAPATOS/NIKE1/CASILLA2/NIKE2.2.webp" alt="">
+
+                        </a>
+                    <div class="h1txt">
+                        <a href="/zapatonike.html" class="h1p">PRODUCTO 1</a>
+                    </div>
+                </div>
+                <div class="containerimgcat">
+                        <a href="/zapatonike.html" class="txtcatg">
+                            <img class="imgcat" class="imgcatalogoinicio" src="images/MOTOS/PRODUCTO 1/CASILLA1/BOMBER2.webp" alt="">
+                            
+                        </a>
+                        <div class="h1txt">
+                            <a href="/zapatonike.html" class="h1p">PRODUCTO 2</a>
+                        </div>
+                </div>
+                <div class="containerimgcat">
+                
+                    <a href="/zapatonike.html" class="txtcatg">
+                        <img class="imgcat" class="imgcatalogoinicio" src="images/ROPA/PRODUCTO 3/CASILLA1/SUDADERA2.webp" alt="">
+                    </a>
+                    <div class="h1txt">
+                        <a href="/zapatonike.html" class="h1p">PRODUCTO 3</a>
+                    </div>
+                </div>
+                
+
+
+            </div>
+        </div>
+        <br>
+        <div id="quienes"class="infoprincipal2">
+            
+            <div class="textinfo2">
+                <h1>Tienda Unica</h1>
+                <h1>¿quienes somos?</h1>
+                <p >
+                    Misión:
+                    En Tienda Única, nuestra misión es ofrecer a nuestros clientes una experiencia de compra única y conveniente, donde puedan encontrar una amplia variedad de productos de calidad que satisfagan sus necesidades y estilos de vida. Nos comprometemos a proporcionar un servicio excepcional, opciones de compra seguras y una entrega rápida, garantizando la satisfacción del cliente en cada paso del proceso.
+                </p>
+                <p>
+                    Visión:
+                    Nuestra visión en Tienda Única es convertirnos en el destino de compras preferido tanto en el ámbito nacional como internacional, siendo reconocidos por nuestra diversidad de productos, calidad de servicio y compromiso con la excelencia. Nos esforzamos por ser líderes en la industria, innovando constantemente para superar las expectativas de nuestros clientes y establecer nuevos estándares en la experiencia de compra en línea.
+                </p>  
+                    
+            </div>
+            <img class="iconprincipal"src="data:image/png;base64,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"/>
+        </div>
 
     </main>
+    <br>
+    <footer id="Contactanos">
+        <div class="footer">
+            <div>
+                <h1 class="h1">Menu</h1>
+                <hr>
+                <div class="footertxt">
+                    <a class="buscador" href="/index.html">Inicio</a>
+                    <a class="buscador" href="/categorias.html">Catalogo</a>
+                    <a class="buscador" href="#">Quienes somos</a>
+                    <a class="buscador" href="#">Contactenos</a>
+                </div>
+            </div>
+            <div>
+                <h1 class="h1">Contactanos</h1>
+                <hr>
+                <div class="footericons">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAA29JREFUaEPtWgtS2zAQ1ZoZTE7RcJKGk5ScpM1JgJOQnqTuKYKZwaKyYjd1tavdleQQEs8ww4At6e3bz9NKYM7sgTPDay6APzvjF4ZzMmx3u6Wpqvv9mF+MtUsDsDTGuJ+m/7u1jQHwvwP8hOvrx5xrmI6VneERpLVfDcBKsfimN0JVPZm3ty0sFt4YmZ5sgA/Y/J5pbW4YB3Zrum6TC3gy4EJApzZzwJ+grn+kGjMJsN3tVqaqnlMXIfg+GbgasG1bZ+2c7svFnQRaBdi27cOf+BqyL3ehud/baFxcDNi+vDwLs69PPL4EubKkydyYsRqo61uJJUWAxWCt3cLNzd3hguzr672x1nlIrucR6nrNHYwNWBOzUNfB8TVjRQCx3ZsFWJmNUcvvS9kvLiuM95xa23BUGg9w21rGpNNXSKtb3ZjUMljxHAWsdr9A/A6rLRDHw9DReOYA1rDrFwCwDrmZOPnx3asxXXdHyVAScIZ624sE03WuLA07oofMpWlqDpLlGGA9u3xWcr/pWF7DYuFr/+RBAReMs9wAQ+OhCRMHHFdUJRVUmlGIhIkDpsrGPAoqBTRaosJKKCL/ZlRQetA+W/8Xx5j0o3ZDWgU1qqGZmgbBONYAlisoJKaKJkZkzjBgKmFpFBTiXs5fi4kQEeC2dcLetVLDj1BBYTHfAy7XOQkmLsylY4JDpqAohst1T7IClmZPNO4L7JrGtYU8C2OYdmkpXK+j/2mz9pkaoKSuFjAcV1lyyH3A2u3+WOV38Y6nMGl9hK6kzqh/vwrqhbl6TqmL13wvADz/iYIGEP0NUjrDDPtjzpxNtvyAIiNitT9lezg7CMGEqN7/nA0AxJ2dwXDAp+zWXXeLNfJiPa1TLE8JTbxTZJlgl3TpIUEU3M0IchD71egZU7wR71l2p/z4dpG9nrIvUtvQYeYo4F4C5z/izI+c2IIeTsYCXHijngN81JVFDH/oeCZaTiFLshnuWS6/h5WxLQTLytLTFczUYuUAjx6NJjN8OMCRyxU7ZqegRS4dYNtdTHNqbK6SRZ4MctwiCfAY1/7GbOlLampWVWUpZr2CsZ0FqKosxUCPjF9drUzXfUs46U+6XkitM9mlqcF71h14d3e6twZ5Qdx1Mo3mOiGHiGIMSyY/xrtFGT4GoNicF8AxC536/8+O4Xeyfs9MNAS8/QAAAABJRU5ErkJggg=="/>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAA29JREFUaEPtWgtS2zAQ1ZoZTE7RcJKGk5ScpM1JgJOQnqTuKYKZwaKyYjd1tavdleQQEs8ww4At6e3bz9NKYM7sgTPDay6APzvjF4ZzMmx3u6Wpqvv9mF+MtUsDsDTGuJ+m/7u1jQHwvwP8hOvrx5xrmI6VneERpLVfDcBKsfimN0JVPZm3ty0sFt4YmZ5sgA/Y/J5pbW4YB3Zrum6TC3gy4EJApzZzwJ+grn+kGjMJsN3tVqaqnlMXIfg+GbgasG1bZ+2c7svFnQRaBdi27cOf+BqyL3ehud/baFxcDNi+vDwLs69PPL4EubKkydyYsRqo61uJJUWAxWCt3cLNzd3hguzr672x1nlIrucR6nrNHYwNWBOzUNfB8TVjRQCx3ZsFWJmNUcvvS9kvLiuM95xa23BUGg9w21rGpNNXSKtb3ZjUMljxHAWsdr9A/A6rLRDHw9DReOYA1rDrFwCwDrmZOPnx3asxXXdHyVAScIZ624sE03WuLA07oofMpWlqDpLlGGA9u3xWcr/pWF7DYuFr/+RBAReMs9wAQ+OhCRMHHFdUJRVUmlGIhIkDpsrGPAoqBTRaosJKKCL/ZlRQetA+W/8Xx5j0o3ZDWgU1qqGZmgbBONYAlisoJKaKJkZkzjBgKmFpFBTiXs5fi4kQEeC2dcLetVLDj1BBYTHfAy7XOQkmLsylY4JDpqAohst1T7IClmZPNO4L7JrGtYU8C2OYdmkpXK+j/2mz9pkaoKSuFjAcV1lyyH3A2u3+WOV38Y6nMGl9hK6kzqh/vwrqhbl6TqmL13wvADz/iYIGEP0NUjrDDPtjzpxNtvyAIiNitT9lezg7CMGEqN7/nA0AxJ2dwXDAp+zWXXeLNfJiPa1TLE8JTbxTZJlgl3TpIUEU3M0IchD71egZU7wR71l2p/z4dpG9nrIvUtvQYeYo4F4C5z/izI+c2IIeTsYCXHijngN81JVFDH/oeCZaTiFLshnuWS6/h5WxLQTLytLTFczUYuUAjx6NJjN8OMCRyxU7ZqegRS4dYNtdTHNqbK6SRZ4MctwiCfAY1/7GbOlLampWVWUpZr2CsZ0FqKosxUCPjF9drUzXfUs46U+6XkitM9mlqcF71h14d3e6twZ5Qdx1Mo3mOiGHiGIMSyY/xrtFGT4GoNicF8AxC536/8+O4Xeyfs9MNAS8/QAAAABJRU5ErkJggg=="/>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAA29JREFUaEPtWgtS2zAQ1ZoZTE7RcJKGk5ScpM1JgJOQnqTuKYKZwaKyYjd1tavdleQQEs8ww4At6e3bz9NKYM7sgTPDay6APzvjF4ZzMmx3u6Wpqvv9mF+MtUsDsDTGuJ+m/7u1jQHwvwP8hOvrx5xrmI6VneERpLVfDcBKsfimN0JVPZm3ty0sFt4YmZ5sgA/Y/J5pbW4YB3Zrum6TC3gy4EJApzZzwJ+grn+kGjMJsN3tVqaqnlMXIfg+GbgasG1bZ+2c7svFnQRaBdi27cOf+BqyL3ehud/baFxcDNi+vDwLs69PPL4EubKkydyYsRqo61uJJUWAxWCt3cLNzd3hguzr672x1nlIrucR6nrNHYwNWBOzUNfB8TVjRQCx3ZsFWJmNUcvvS9kvLiuM95xa23BUGg9w21rGpNNXSKtb3ZjUMljxHAWsdr9A/A6rLRDHw9DReOYA1rDrFwCwDrmZOPnx3asxXXdHyVAScIZ624sE03WuLA07oofMpWlqDpLlGGA9u3xWcr/pWF7DYuFr/+RBAReMs9wAQ+OhCRMHHFdUJRVUmlGIhIkDpsrGPAoqBTRaosJKKCL/ZlRQetA+W/8Xx5j0o3ZDWgU1qqGZmgbBONYAlisoJKaKJkZkzjBgKmFpFBTiXs5fi4kQEeC2dcLetVLDj1BBYTHfAy7XOQkmLsylY4JDpqAohst1T7IClmZPNO4L7JrGtYU8C2OYdmkpXK+j/2mz9pkaoKSuFjAcV1lyyH3A2u3+WOV38Y6nMGl9hK6kzqh/vwrqhbl6TqmL13wvADz/iYIGEP0NUjrDDPtjzpxNtvyAIiNitT9lezg7CMGEqN7/nA0AxJ2dwXDAp+zWXXeLNfJiPa1TLE8JTbxTZJlgl3TpIUEU3M0IchD71egZU7wR71l2p/z4dpG9nrIvUtvQYeYo4F4C5z/izI+c2IIeTsYCXHijngN81JVFDH/oeCZaTiFLshnuWS6/h5WxLQTLytLTFczUYuUAjx6NJjN8OMCRyxU7ZqegRS4dYNtdTHNqbK6SRZ4MctwiCfAY1/7GbOlLampWVWUpZr2CsZ0FqKosxUCPjF9drUzXfUs46U+6XkitM9mlqcF71h14d3e6twZ5Qdx1Mo3mOiGHiGIMSyY/xrtFGT4GoNicF8AxC536/8+O4Xeyfs9MNAS8/QAAAABJRU5ErkJggg=="/>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </footer>
 
     
 </body>

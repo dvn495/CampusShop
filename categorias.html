@@ -9,54 +9,156 @@
 <body>
     <nav class="nav">
         <div class="container">
-            <h1>Tienda Unica</h1>
+            <div class="titleimg">
+                <h1 class="title">Tienda Unica</h1>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAA1JJREFUeF7tnItR3DAQhqVOQiUJlSRUklBJoBKgkpBKFn5GYoyxvU8bGVYznru5O+3Jn/5dvV1Lpk0CNflsE0hAjEISUALyBZFU0KgKIqJfpZTvrXzfSin9wkePk+t/e39fa8Xnh6bDFEREP0opuH42GJYbvS+lPDznvzkK1u6AmlJ+O6CsgQSs61orXndLuwFqigEYqGbPtCuocEBEhFjy9wAwc+gAdRXteqGAmmru9pQLYxtB/DISUhigAeBM2UFJNxEVFQKIiOBSaLZHStcRrZ0bEBH9KaUgGI+Y0MqhfObkAtSacKhn5OSCZAY0WMzhKujCGrhNgFpT/o8r1UDfm1s3KyA05Xt3AKP5YnhypTWqBnRC9UyZqF3NAuiM6umQMCNwqVGRCtDJAvMaB1UnUgsIgRljrTMnlYrEgE4ee+YVKo5FGkDWHjPGRJjk6vM2UCAmzbRDkyg7gCXuPGoAad0LfQ/4++KEVotn6IVzLhtlZ6oisZuJABndC9MOm7N9wqAfZcfkZlJAWvcSS5iZCYiys9SoiFqzvQCxtd5LzAx4o+wsARL1rKWAVPM99XmOQdoP2HLfKDsrZQkFpO09i5tRJr5F2VliJArUopomIm0LJvJvlJoJ1FF2lgA91lovOKVLARFnaPa9JrhuNQBRdhaLL3HhvQChQKx7CJv5KDvvIH00IEkHT7JEFGVnOEC9QBgi3GIDAqY9J5sWLEONCDuvoD5aQcqwdfzPExDDPAElIJ9bpoJSQakgH4FUkI9fxqBUUCrIRyAV5OOXMSgVlAryEUgF+fhlDEoFpYJ8BFJBPn4Zg7b5hS4cqtbmffV6WG7RoqR04RBLNKMfOdCSjQOEfzasz2sLfPTv2RVbFEikoAboM7mZSD0qQJ9IRaLg3OUsVlADhA2XWE/nNl6uuQv2LE7Px1vcCjY850TEu9bUCmqQELAtx7xf9vo4j4m/3JzxEN/mJoi1mlIpaGqkbb5ETXJqelewtqusHxnn8uNvsQECceP1yQuKbcTIL445c1BmQE1N/WkKeMREv1G8wg1wMw9bh2snT2OY50fe/pSFzUdSNBvYmN7d7s3/w471MJ3JxSxB48x5XAo6841Ly56AuBG/lORX/V0qKBXk0/4TDiPGWF4HwAEAAAAASUVORK5CYII="/>
+            </div> 
             <div class="navegacion">
                 <a class="buscador" href="/index.html">Inicio</a>
                 <a class="buscador" href="/categorias.html">Catalogo</a>
-                <a class="buscador" href="#">Quienes somos</a>
-                <a class="buscador" href="#">Contactenos</a>
+                <a class="buscador" href="/index.html#quienes">Quienes somos</a>
+                <a class="buscador" href="/index.html#Contactanos">Contactenos</a>
+                <a class="buscador" href="/carrito.html">Carrito</a>
             </div>
+        </div>
+        <div class="nav__container">
+            <h1 class="nav__title">Tienda Unica</h1>
+            <a href="#menu" class="nav__menu">
+                <img src="images/bx-universal-access.svg" class="nav__icon">
+            </a>
+            <a href="#" class="nav__menu nav__menu--second">
+                <img src="images/bxs-universal-access.svg" class="nav__icon">
+            </a>
+            <ul class="dropdown" id="menu">
+                <li class="dropdown__list">
+                    <a href="/index.html" class="dropdown__link">
+                        <img src="images/bx-home-alt-2.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Inicio</span>
+                    </a>
+                </li>
+
+                <li class="dropdown__list">
+                    <a href="/categorias.html" class="dropdown__link">
+                        <img src="images/bx-log-in-circle.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Catalogo</span>
+                    </a>
+                </li>
+
+                <li class="dropdown__list">
+                    <a href="/index.html" class="dropdown__link">
+                        <img src="images/bx-search-alt-2.svg"dropdown__icon">
+                        <span class="dropdown__span">¿Quienes somos?</span>
+                    </a>
+                </li>
+                <li class="dropdown__list">
+                    <a href="/carrito.html" class="dropdown__link">
+                        <img src="images/bx-search-alt-2.svg"dropdown__icon">
+                        <span class="dropdown__span">carrito</span>
+                    </a>
+                </li>
+                
+
+                <li class="dropdown__list">
+                    <a href="/index.html" class="dropdown__link">
+                        <img src="images/bxs-comment.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Contactanos</span>
+                        <img src="./Pictures/body_main/down.svg" class="dropdown__arrow">
+
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+
+                        <ul class="dropdown__sub">
+
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Contact 1</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Contact 2</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </div>
     </nav>
     <main >
+        <div class="titlecatalog">
+            <h1>VISISTA NUESTRA VARIEDAD DE PRODUCTOS</h1>
+        </div>
         <div class="principal">
             <div class="clasessecu">
                 <div class="clases">
-                    <a href="/zapatos.html">
-                        <img class="imgclases" src="images/ZAPATOS/NIKE1/CASILLA2/NIKE2.2.webp">
-                    </a>
+                    <div class="classcategory">
+                        <a href="/zapatos.html">
+                            <img class="imgclases" src="images/ZAPATOS/NIKE1/CASILLA2/NIKE2.2.webp">
+                        </a>
+                    </div>
                     <h1 class="txt">Zapatos</h1>
                 </div> 
                 <div class="clases">
-                    <a href="/zapatos.html">
-                        <img class="imgclases" src="images/ZAPATOS/NIKE1/CASILLA2/NIKE2.2.webp">
-                    </a>
+                    <div class="classcategory">
+                        <a href="/zapatos.html">
+                            <img class="imgclases" src="images/ROPA/PRODUCTO 4/CASILLA2/CHAQUETA2.2.webp">
+                        </a>
+                    </div>
                     <h1 class="txt">Zapatos</h1>
                 </div> 
                 <div class="clases">
-                    <a href="/zapatos.html">
-                        <img class="imgclases" src="images/ZAPATOS/NIKE1/CASILLA2/NIKE2.2.webp">
-                    </a>
+                    <div class="classcategory">
+                        <a href="/zapatos.html">
+                            <img class="imgclases" src="images/ZAPATOS/NIKE1/CASILLA2/NIKE2.2.webp">
+                        </a>
+                    </div>
                     <h1 class="txt">Zapatos</h1>
                 </div> 
             </div>
             <div class="clasessecu">
                 <div class="clases">
-                    <a href="/zapatos.html">
-                        <img class="imgclases" src="images/ZAPATOS/NIKE1/CASILLA2/NIKE2.2.webp">
-                    </a>
+                    <div class="classcategory">
+                        <a href="/zapatos.html">
+                            <img class="imgclases" src="images/ZAPATOS/NIKE1/CASILLA2/NIKE2.2.webp">
+                        </a>
+                    </div>
                     <h1 class="txt">Zapatos</h1>
                 </div> 
                 <div class="clases">
-                    <a href="/zapatos.html">
-                        <img class="imgclases" src="images/ZAPATOS/NIKE1/CASILLA2/NIKE2.2.webp">
-                    </a>
+                    <div class="classcategory">
+                        <a href="/zapatos.html">
+                            <img class="imgclases" src="images/ZAPATOS/NIKE1/CASILLA2/NIKE2.2.webp">
+                        </a>
+                    </div>
                     <h1 class="txt">Zapatos</h1>
                 </div> 
             </div>
         </div>
     </main>
-    <footer>
+    <br>
+    <footer id="Contactanos">
+        <div class="footer">
+            <div>
+                <h1 class="h1">Menu</h1>
+                <hr>
+                <div class="footertxt">
+                    <a class="buscador" href="/index.html">Inicio</a>
+                    <a class="buscador" href="/categorias.html">Catalogo</a>
+                    <a class="buscador" href="#">Quienes somos</a>
+                    <a class="buscador" href="#">Contactenos</a>
+                </div>
+            </div>
+            <div>
+                <h1 class="h1">Contactanos</h1>
+                <hr>
+                <div class="footericons">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAA29JREFUaEPtWgtS2zAQ1ZoZTE7RcJKGk5ScpM1JgJOQnqTuKYKZwaKyYjd1tavdleQQEs8ww4At6e3bz9NKYM7sgTPDay6APzvjF4ZzMmx3u6Wpqvv9mF+MtUsDsDTGuJ+m/7u1jQHwvwP8hOvrx5xrmI6VneERpLVfDcBKsfimN0JVPZm3ty0sFt4YmZ5sgA/Y/J5pbW4YB3Zrum6TC3gy4EJApzZzwJ+grn+kGjMJsN3tVqaqnlMXIfg+GbgasG1bZ+2c7svFnQRaBdi27cOf+BqyL3ehud/baFxcDNi+vDwLs69PPL4EubKkydyYsRqo61uJJUWAxWCt3cLNzd3hguzr672x1nlIrucR6nrNHYwNWBOzUNfB8TVjRQCx3ZsFWJmNUcvvS9kvLiuM95xa23BUGg9w21rGpNNXSKtb3ZjUMljxHAWsdr9A/A6rLRDHw9DReOYA1rDrFwCwDrmZOPnx3asxXXdHyVAScIZ624sE03WuLA07oofMpWlqDpLlGGA9u3xWcr/pWF7DYuFr/+RBAReMs9wAQ+OhCRMHHFdUJRVUmlGIhIkDpsrGPAoqBTRaosJKKCL/ZlRQetA+W/8Xx5j0o3ZDWgU1qqGZmgbBONYAlisoJKaKJkZkzjBgKmFpFBTiXs5fi4kQEeC2dcLetVLDj1BBYTHfAy7XOQkmLsylY4JDpqAohst1T7IClmZPNO4L7JrGtYU8C2OYdmkpXK+j/2mz9pkaoKSuFjAcV1lyyH3A2u3+WOV38Y6nMGl9hK6kzqh/vwrqhbl6TqmL13wvADz/iYIGEP0NUjrDDPtjzpxNtvyAIiNitT9lezg7CMGEqN7/nA0AxJ2dwXDAp+zWXXeLNfJiPa1TLE8JTbxTZJlgl3TpIUEU3M0IchD71egZU7wR71l2p/z4dpG9nrIvUtvQYeYo4F4C5z/izI+c2IIeTsYCXHijngN81JVFDH/oeCZaTiFLshnuWS6/h5WxLQTLytLTFczUYuUAjx6NJjN8OMCRyxU7ZqegRS4dYNtdTHNqbK6SRZ4MctwiCfAY1/7GbOlLampWVWUpZr2CsZ0FqKosxUCPjF9drUzXfUs46U+6XkitM9mlqcF71h14d3e6twZ5Qdx1Mo3mOiGHiGIMSyY/xrtFGT4GoNicF8AxC536/8+O4Xeyfs9MNAS8/QAAAABJRU5ErkJggg=="/>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAA29JREFUaEPtWgtS2zAQ1ZoZTE7RcJKGk5ScpM1JgJOQnqTuKYKZwaKyYjd1tavdleQQEs8ww4At6e3bz9NKYM7sgTPDay6APzvjF4ZzMmx3u6Wpqvv9mF+MtUsDsDTGuJ+m/7u1jQHwvwP8hOvrx5xrmI6VneERpLVfDcBKsfimN0JVPZm3ty0sFt4YmZ5sgA/Y/J5pbW4YB3Zrum6TC3gy4EJApzZzwJ+grn+kGjMJsN3tVqaqnlMXIfg+GbgasG1bZ+2c7svFnQRaBdi27cOf+BqyL3ehud/baFxcDNi+vDwLs69PPL4EubKkydyYsRqo61uJJUWAxWCt3cLNzd3hguzr672x1nlIrucR6nrNHYwNWBOzUNfB8TVjRQCx3ZsFWJmNUcvvS9kvLiuM95xa23BUGg9w21rGpNNXSKtb3ZjUMljxHAWsdr9A/A6rLRDHw9DReOYA1rDrFwCwDrmZOPnx3asxXXdHyVAScIZ624sE03WuLA07oofMpWlqDpLlGGA9u3xWcr/pWF7DYuFr/+RBAReMs9wAQ+OhCRMHHFdUJRVUmlGIhIkDpsrGPAoqBTRaosJKKCL/ZlRQetA+W/8Xx5j0o3ZDWgU1qqGZmgbBONYAlisoJKaKJkZkzjBgKmFpFBTiXs5fi4kQEeC2dcLetVLDj1BBYTHfAy7XOQkmLsylY4JDpqAohst1T7IClmZPNO4L7JrGtYU8C2OYdmkpXK+j/2mz9pkaoKSuFjAcV1lyyH3A2u3+WOV38Y6nMGl9hK6kzqh/vwrqhbl6TqmL13wvADz/iYIGEP0NUjrDDPtjzpxNtvyAIiNitT9lezg7CMGEqN7/nA0AxJ2dwXDAp+zWXXeLNfJiPa1TLE8JTbxTZJlgl3TpIUEU3M0IchD71egZU7wR71l2p/z4dpG9nrIvUtvQYeYo4F4C5z/izI+c2IIeTsYCXHijngN81JVFDH/oeCZaTiFLshnuWS6/h5WxLQTLytLTFczUYuUAjx6NJjN8OMCRyxU7ZqegRS4dYNtdTHNqbK6SRZ4MctwiCfAY1/7GbOlLampWVWUpZr2CsZ0FqKosxUCPjF9drUzXfUs46U+6XkitM9mlqcF71h14d3e6twZ5Qdx1Mo3mOiGHiGIMSyY/xrtFGT4GoNicF8AxC536/8+O4Xeyfs9MNAS8/QAAAABJRU5ErkJggg=="/>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAA29JREFUaEPtWgtS2zAQ1ZoZTE7RcJKGk5ScpM1JgJOQnqTuKYKZwaKyYjd1tavdleQQEs8ww4At6e3bz9NKYM7sgTPDay6APzvjF4ZzMmx3u6Wpqvv9mF+MtUsDsDTGuJ+m/7u1jQHwvwP8hOvrx5xrmI6VneERpLVfDcBKsfimN0JVPZm3ty0sFt4YmZ5sgA/Y/J5pbW4YB3Zrum6TC3gy4EJApzZzwJ+grn+kGjMJsN3tVqaqnlMXIfg+GbgasG1bZ+2c7svFnQRaBdi27cOf+BqyL3ehud/baFxcDNi+vDwLs69PPL4EubKkydyYsRqo61uJJUWAxWCt3cLNzd3hguzr672x1nlIrucR6nrNHYwNWBOzUNfB8TVjRQCx3ZsFWJmNUcvvS9kvLiuM95xa23BUGg9w21rGpNNXSKtb3ZjUMljxHAWsdr9A/A6rLRDHw9DReOYA1rDrFwCwDrmZOPnx3asxXXdHyVAScIZ624sE03WuLA07oofMpWlqDpLlGGA9u3xWcr/pWF7DYuFr/+RBAReMs9wAQ+OhCRMHHFdUJRVUmlGIhIkDpsrGPAoqBTRaosJKKCL/ZlRQetA+W/8Xx5j0o3ZDWgU1qqGZmgbBONYAlisoJKaKJkZkzjBgKmFpFBTiXs5fi4kQEeC2dcLetVLDj1BBYTHfAy7XOQkmLsylY4JDpqAohst1T7IClmZPNO4L7JrGtYU8C2OYdmkpXK+j/2mz9pkaoKSuFjAcV1lyyH3A2u3+WOV38Y6nMGl9hK6kzqh/vwrqhbl6TqmL13wvADz/iYIGEP0NUjrDDPtjzpxNtvyAIiNitT9lezg7CMGEqN7/nA0AxJ2dwXDAp+zWXXeLNfJiPa1TLE8JTbxTZJlgl3TpIUEU3M0IchD71egZU7wR71l2p/z4dpG9nrIvUtvQYeYo4F4C5z/izI+c2IIeTsYCXHijngN81JVFDH/oeCZaTiFLshnuWS6/h5WxLQTLytLTFczUYuUAjx6NJjN8OMCRyxU7ZqegRS4dYNtdTHNqbK6SRZ4MctwiCfAY1/7GbOlLampWVWUpZr2CsZ0FqKosxUCPjF9drUzXfUs46U+6XkitM9mlqcF71h14d3e6twZ5Qdx1Mo3mOiGHiGIMSyY/xrtFGT4GoNicF8AxC536/8+O4Xeyfs9MNAS8/QAAAABJRU5ErkJggg=="/>
+                </div>
+                
+            </div>
+
+        </div>
 
     </footer>
     
